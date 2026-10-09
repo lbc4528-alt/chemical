@@ -168,6 +168,40 @@ function initDistillation() {
 
 initDistillation();
 
+const narrativeMotionTargets = [
+  document.getElementById("now"),
+  document.getElementById("direction"),
+  document.querySelector(".closing")
+].filter(Boolean);
+
+function initNarrativeMotions() {
+  if (!narrativeMotionTargets.length) return;
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    narrativeMotionTargets.forEach((target) => target.classList.add("motion-active"));
+    return;
+  }
+
+  document.documentElement.classList.add("motion-ready");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("motion-active");
+      observer.unobserve(entry.target);
+    });
+  }, {
+    root: null,
+    rootMargin: "0px 0px -12% 0px",
+    threshold: 0.22
+  });
+
+  narrativeMotionTargets.forEach((target) => observer.observe(target));
+}
+
+initNarrativeMotions();
+
 const evidenceModal = document.getElementById("evidenceModal");
 const evidenceTitle = document.getElementById("evidenceTitle");
 const evidenceViewer = document.getElementById("evidenceViewer");
