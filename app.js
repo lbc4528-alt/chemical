@@ -168,18 +168,27 @@ function initDistillation() {
 
 initDistillation();
 
-const narrativeMotionTargets = [
-  document.getElementById("now"),
-  document.getElementById("direction"),
-  document.querySelector(".closing")
-].filter(Boolean);
+const narrativeMotionItems = [
+  {
+    trigger: document.querySelector("#now .summary-list"),
+    target: document.getElementById("now")
+  },
+  {
+    trigger: document.getElementById("direction"),
+    target: document.getElementById("direction")
+  },
+  {
+    trigger: document.querySelector(".closing"),
+    target: document.querySelector(".closing")
+  }
+].filter(({ trigger, target }) => trigger && target);
 
 function initNarrativeMotions() {
-  if (!narrativeMotionTargets.length) return;
+  if (!narrativeMotionItems.length) return;
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (reduceMotion || !("IntersectionObserver" in window)) {
-    narrativeMotionTargets.forEach((target) => target.classList.add("motion-active"));
+    narrativeMotionItems.forEach(({ target }) => target.classList.add("motion-active"));
     return;
   }
 
@@ -188,7 +197,8 @@ function initNarrativeMotions() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
-      entry.target.classList.add("motion-active");
+      const item = narrativeMotionItems.find(({ trigger }) => trigger === entry.target);
+      item?.target.classList.add("motion-active");
       observer.unobserve(entry.target);
     });
   }, {
@@ -197,7 +207,7 @@ function initNarrativeMotions() {
     threshold: 0.22
   });
 
-  narrativeMotionTargets.forEach((target) => observer.observe(target));
+  narrativeMotionItems.forEach(({ trigger }) => observer.observe(trigger));
 }
 
 initNarrativeMotions();
