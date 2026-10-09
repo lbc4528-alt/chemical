@@ -559,11 +559,11 @@ html.motion-ready #direction .direction-quote-highlight {
   color: #43505e;
   transition: color .75s ease;
 }
-#direction.motion-active blockquote {
+html.motion-ready #direction.motion-active blockquote {
   color: var(--text);
   transition-delay: 1.45s;
 }
-#direction.motion-active .direction-quote-highlight {
+html.motion-ready #direction.motion-active .direction-quote-highlight {
   color: var(--mint);
   transition-delay: 1.45s;
 }
