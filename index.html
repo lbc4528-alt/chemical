@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#090d12" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="description" content="화학공학의 기초와 AI 활용 경험을 쌓으며 공정 엔지니어로 성장하는 이병찬의 포트폴리오" />
+  <title>이병찬 | Chemical Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23090d12'/%3E%3Cpath d='M24 12h16M28 12v15L16 48a4 4 0 0 0 4 6h24a4 4 0 0 0 4-6L36 27V12' fill='none' stroke='%236be7c6' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M20 46h24' stroke='%23aa82f5' stroke-width='7'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css?v=37" />
+</head>
+<body>
+  <section class="intro" id="intro" aria-label="화학공학 인트로 애니메이션">
+    <div id="tsparticles" aria-hidden="true"></div>
+    <button class="intro-skip" id="skipIntro">건너뛰기</button>
+    <div class="lab-stage">
+      <div class="lab-copy">
+        <div class="eyebrow">AI × PROCESS ENGINEERING</div>
+        <h1>병찬의 인생을 제조중</h1>
+      </div>
+      <div class="glass pourer" aria-hidden="true">🧪</div>
+      <div class="stream" aria-hidden="true"></div>
+      <div class="glass receiver" aria-hidden="true">⚗️</div>
+      <div class="burst" aria-hidden="true"></div>
+      <i class="particle" style="--r:10deg;--c:#6be7c6;--d:0s"></i>
+      <i class="particle" style="--r:48deg;--c:#aa82f5;--d:.03s"></i>
+      <i class="particle" style="--r:94deg;--c:#74a7ff;--d:.06s"></i>
+      <i class="particle" style="--r:142deg;--c:#ff985f;--d:.09s"></i>
+      <i class="particle" style="--r:195deg;--c:#6be7c6;--d:.12s"></i>
+      <i class="particle" style="--r:238deg;--c:#aa82f5;--d:.15s"></i>
+      <i class="particle" style="--r:292deg;--c:#74a7ff;--d:.18s"></i>
+    </div>
+  </section>
+
+  <div class="site" id="site">
+    <div id="siteParticles" aria-hidden="true"></div>
+    <nav class="nav" aria-label="포트폴리오 메뉴">
+      <a class="brand" href="#top">BC.01</a>
+      <div class="nav-links">
+        <a href="#now">현재</a>
+        <a href="#direction">방향</a>
+        <a href="#actions">성장 행동</a>
+        <a href="#project">프로젝트</a>
+        <a href="#evidence">성장 근거</a>
+      </div>
+    </nav>
+
+    <main id="top">
+      <header class="hero">
+        <div class="hero-etching" role="img" aria-label="CHEMICAL ENGINEERING STUDENT">
+          <svg viewBox="0 0 1100 92" aria-hidden="true" focusable="false">
+            <defs>
+              <clipPath id="heroOutlineClip" clipPathUnits="userSpaceOnUse">
+                <rect class="hero-etch-outline-clip" x="0" y="0" width="1070" height="92" />
+              </clipPath>
+              <clipPath id="heroFillClip" clipPathUnits="userSpaceOnUse">
+                <rect class="hero-etch-fill-clip" x="0" y="0" width="1070" height="92" />
+              </clipPath>
+              <linearGradient id="heroLaserTrail" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#6be7c6" stop-opacity="0" />
+                <stop offset=".72" stop-color="#6be7c6" stop-opacity=".08" />
+                <stop offset="1" stop-color="#eafffa" stop-opacity=".72" />
+              </linearGradient>
+            </defs>
+            <text x="4" y="68" textLength="1060" lengthAdjust="spacingAndGlyphs" class="hero-etch-outline" clip-path="url(#heroOutlineClip)">CHEMICAL ENGINEERING STUDENT</text>
+            <text x="4" y="68" textLength="1060" lengthAdjust="spacingAndGlyphs" class="hero-etch-fill" clip-path="url(#heroFillClip)">CHEMICAL ENGINEERING STUDENT</text>
+            <g class="hero-laser-head">
+              <g class="hero-laser-emitter">
+                <rect class="hero-laser-trail" x="-118" y="7" width="118" height="78" />
+                <line class="hero-laser-aura" x1="0" y1="4" x2="0" y2="88" />
+                <line class="hero-laser-core" x1="0" y1="4" x2="0" y2="88" />
+                <circle class="hero-laser-halo" cx="0" cy="46" r="12" />
+                <circle class="hero-laser-dot" cx="0" cy="46" r="3" />
+                <g class="hero-laser-sparks">
+                  <circle cx="-5" cy="18" r="2" style="--spark-x:-22px;--spark-y:-13px;--spark-delay:-.08s" />
+                  <circle cx="-3" cy="31" r="1.5" style="--spark-x:-28px;--spark-y:7px;--spark-delay:-.24s" />
+                  <circle cx="-4" cy="45" r="1.8" style="--spark-x:-20px;--spark-y:-8px;--spark-delay:-.34s" />
+                  <circle cx="-3" cy="58" r="1.4" style="--spark-x:-30px;--spark-y:12px;--spark-delay:-.17s" />
+                  <circle cx="-5" cy="73" r="2" style="--spark-x:-24px;--spark-y:14px;--spark-delay:-.29s" />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <h1><span>기초를 쌓고,</span><span>현장을 향해 성장합니다.</span></h1>
+        <p class="hero-copy">화학공학을 전공하며 학점 관리와 자격증 준비를 병행하고 있습니다. 아르바이트와 프로젝트에서는 AI를 직접 활용하며, 화학·반도체 공정의 문제를 스스로 해결할 수 있는 엔지니어를 준비하고 있습니다.</p>
+        <dl class="hero-profile" aria-label="기본 자기소개">
+          <div><dt>이름</dt><dd>이병찬</dd></div>
+          <div><dt>전공</dt><dd>화학공학과</dd></div>
+          <div><dt>학번</dt><dd>202614065</dd></div>
+          <div><dt>학년</dt><dd>1학년</dd></div>
+        </dl>
+        <div class="hero-facts" aria-label="주요 성장 지표">
+          <div><strong>4.5</strong><span>현재 학점</span></div>
+          <div><strong>위험물 기능사 필기<br>합격</strong><span>자격증 현황</span></div>
+          <div><strong>제조 데이터 분석 경연대회 2등</strong><span>AI 역량</span></div>
+        </div>
+      </header>
+
+      <section class="section" id="now">
+        <div class="section-index">01</div>
+        <div class="section-content">
+          <p class="mono-label">CURRENT POSITION</p>
+          <h2>현재의 나</h2>
+          <div class="two-column-copy">
+            <div class="prose">
+              <p>현재 화학공학을 전공하며 <strong>학점 관리와 자격증 준비</strong>를 함께 이어가고 있습니다. 학점은 <strong>4.5</strong>를 유지하고 있으며, 위험물기능사 필기시험에 합격한 뒤 최종 자격 취득을 준비하고 있습니다.</p>
+              <p>학업과 함께 여행사에서 아르바이트하며 반복 업무를 더 효율적으로 처리할 방법을 고민했습니다. 그 과정에서 <strong>API를 활용한 여권 분석기</strong>를 제작해 AI가 실제 업무에 적용되는 과정을 경험했습니다.</p>
+              <p>AI 활용 역량을 높이기 위해 교외 교육과 경연대회에 참여했고, 반도체 분야 진출을 위한 기초를 쌓고자 관련 교육도 수강하고 있습니다.</p>
+              <p>또한 교내 <strong>학습공동체 프로그램</strong>에 참여해 팀원들과 대기업 인적성 시험을 준비하고 있습니다. <strong>GSAT와 SKCT</strong>를 중심으로 문제 풀이 방법과 취약 영역을 공유하며, 목표 기업에 필요한 사고력과 문제 해결 역량을 꾸준히 키우고 있습니다.</p>
+            </div>
+            <dl class="summary-list">
+              <div><dt>전공</dt><dd>화학공학</dd></div>
+              <div><dt>학점</dt><dd>4.5</dd></div>
+              <div><dt>AI 경험</dt><dd>여권 분석기 제작<br>제조 데이터 분석</dd></div>
+              <div><dt>현재 학습</dt><dd>위험물 · 반도체 교육<br>GSAT · SKCT</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section direction" id="direction">
+        <div class="section-index">02</div>
+        <div class="section-content">
+          <p class="mono-label">CAREER DIRECTION</p>
+          <h2>내가 향하고 있는 방향</h2>
+          <p class="direction-lead">화학공장 및 반도체 산업의 <strong>공정 엔지니어 또는 오퍼레이터</strong>로 성장하는 것이 목표입니다.</p>
+          <div class="direction-body">
+            <p>반도체 산업은 화학공학에서 배우는 공정, 소재, 안전, 품질 관리 지식을 실제 현장에 적용할 수 있다는 점에서 관심을 갖게 되었습니다.</p>
+            <p>아직 화학공학의 기초 지식과 AI 활용 능력 모두 더 성장해야 한다고 생각합니다. 많은 것을 아는 사람보다, 기초를 탄탄하게 갖추고 공정을 안전하게 이해하며 문제를 스스로 해결할 수 있는 엔지니어가 되고자 합니다.</p>
+          </div>
+          <blockquote>“화학공학의 기초를 탄탄하게 쌓아,<br />안전을 기본으로 생각하는 엔지니어가 되겠습니다.”</blockquote>
+        </div>
+      </section>
+
+      <section class="section" id="actions">
+        <div class="section-index">03</div>
+        <div class="section-content">
+          <p class="mono-label">GROWTH ACTIONS</p>
+          <h2>부족함을 행동으로 바꾸는 과정</h2>
+          <p class="section-intro">부족한 부분을 생각하는 데서 끝내지 않고, 학습과 업무 경험으로 하나씩 채워가고 있습니다.</p>
+          <ol class="action-list">
+            <li><i class="action-cell-fluid" aria-hidden="true"></i><span>01</span><p><strong>AI 교육 2회 수료</strong><small>AI 활용 역량 확장</small></p></li>
+            <li><i class="action-cell-fluid" aria-hidden="true"></i><span>02</span><p><strong>위험물기능사 준비</strong><small>필기시험 합격</small></p></li>
+            <li><i class="action-cell-fluid" aria-hidden="true"></i><span>03</span><p><strong>전공 학점 4.5 유지</strong><small>기초 학업 역량 관리</small></p></li>
+            <li><i class="action-cell-fluid" aria-hidden="true"></i><span>04</span><p><strong>반도체 교육 수강</strong><small>산업과 공정 이해 확장</small></p></li>
+            <li><i class="action-cell-fluid" aria-hidden="true"></i><span>05</span><p><strong>인적성 시험 준비</strong><small>학습공동체에서 GSAT · SKCT 학습</small></p></li>
+            <li><i class="action-cell-fluid" aria-hidden="true"></i><span>06</span><p><strong>여권 분석기 제작</strong><small>API 기반 업무 효율화 경험</small></p></li>
+            <li><i class="action-cell-fluid" aria-hidden="true"></i><span>07</span><p><strong>제조 데이터 분석</strong><small>생산 과정 문제 탐구</small></p></li>
+            <li><i class="action-cell-fluid" aria-hidden="true"></i><span>08</span><p><strong>교외 경연대회 참가</strong><small>프로젝트 결과 2등 수상</small></p></li>
+          </ol>
+
+          <div class="distillation-module" id="distillationTrigger" aria-labelledby="distillationTitle">
+            <header class="distillation-heading">
+              <p class="mono-label">DISTILLATION OF SKILLS</p>
+              <h3 id="distillationTitle">역량을 증류하다</h3>
+              <p>증류탑의 분리 원리를 빌려 지금까지 쌓은 역량을 세 층으로 정리했습니다.<br />화학공학의 기초가 하단을 받치고, 프로젝트 경험과 AI 활용 역량이 위로 확장됩니다.</p>
+            </header>
+
+            <div class="distillation-mobile-legend" aria-hidden="true">
+              <div class="light"><strong>Top · AI 응용</strong><span>변화에 빠르게 대응하는 AI·데이터 역량</span></div>
+              <div class="mid"><strong>Middle · 프로젝트</strong><span>기초와 기술을 연결한 실무 적용 역량</span></div>
+              <div class="heavy"><strong>Bottom · 전공 기초</strong><span>공정 이해를 지탱하는 화학공학 역량</span></div>
+            </div>
+
+            <div class="distillation-plant">
+              <div class="distillation-column" aria-label="AI 응용, 프로젝트 경험, 화학공학 기초의 세 층으로 분리된 역량 증류탑">
+                <div class="distillation-tray tray-top">
+                  <div class="distillation-tray-label label-left label-light">
+                    Top : 가벼운 기체
+                    <span>변화가 빠르고 민첩한<br />AI · IT 응용 역량</span>
+                  </div>
+                </div>
+                <div class="distillation-tray tray-middle">
+                  <div class="distillation-tray-label label-right label-mid">
+                    Middle : 혼합 액체
+                    <span>기초와 기술을 결합한<br />프로젝트 적용 역량</span>
+                  </div>
+                </div>
+                <div class="distillation-tray tray-bottom">
+                  <div class="distillation-tray-label label-left label-heavy">
+                    Bottom : 무거운 잔류물
+                    <span>흔들리지 않고 묵직한<br />화학공학 기초 역량</span>
+                  </div>
+                </div>
+
+                <div class="distillation-heater"><span aria-hidden="true">●</span> 열정 (Passion to Learn)</div>
+
+                <div class="distillation-skill skill-light" style="--bubble-target:500px;--bubble-x:-58px;--bubble-x-mobile:-48px;--bubble-delay:0ms">AI 교육 2회 수료</div>
+                <div class="distillation-skill skill-light" style="--bubble-target:445px;--bubble-x:72px;--bubble-x-mobile:50px;--bubble-delay:260ms">제조 데이터 분석</div>
+                <div class="distillation-skill skill-mid" style="--bubble-target:325px;--bubble-x:0px;--bubble-x-mobile:-25px;--bubble-delay:520ms">API 여권 분석기</div>
+                <div class="distillation-skill skill-mid" style="--bubble-target:260px;--bubble-x:72px;--bubble-x-mobile:48px;--bubble-delay:780ms">반도체 공정 교육</div>
+                <div class="distillation-skill skill-heavy" style="--bubble-target:120px;--bubble-x:55px;--bubble-x-mobile:45px;--bubble-delay:1040ms">위험물기능사 필기 합격</div>
+                <div class="distillation-skill skill-heavy" style="--bubble-target:68px;--bubble-x:-55px;--bubble-x-mobile:-45px;--bubble-delay:1300ms">전공 학점 4.5</div>
+
+                <i class="distillation-vapor vapor-one" aria-hidden="true"></i>
+                <i class="distillation-vapor vapor-two" aria-hidden="true"></i>
+                <i class="distillation-vapor vapor-three" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section project" id="project">
+        <div class="section-index">04</div>
+        <div class="section-content">
+          <p class="mono-label">AI CORE PROJECT</p>
+          <h2>제조 데이터 분석</h2>
+          <div class="project-overview">
+            <p class="project-question">제조 데이터에서 문제 발생 지점을 찾고, 조건 변화에 따른 결과를 검증할 수 있을까?</p>
+            <div class="project-meta">
+              <span>교외 경연대회</span>
+              <strong>2등 수상</strong>
+            </div>
+          </div>
+          <p class="project-copy">생산률, 불량률, 온도, 압력, 설비 데이터를 살펴보며 문제가 발생하는 지점을 찾고 가설을 세웠습니다. 이후 AI를 활용해 데이터 변화를 분석하고, 조건을 변경했을 때 결과가 어떻게 달라지는지 직접 검증했습니다.</p>
+
+          <div class="process-flow" aria-label="프로젝트 문제 해결 과정">
+            <div><span>01</span><strong>문제 발견</strong><p>생산 데이터에서 이상 지점 탐색</p></div>
+            <div><span>02</span><strong>가설 설정</strong><p>영향 가능성이 높은 변수 선정</p></div>
+            <div><span>03</span><strong>AI 활용 분석</strong><p>변수 변화와 결과의 관계 비교</p></div>
+            <div><span>04</span><strong>결과 검증</strong><p>조건 변경 후 결과 재계산</p></div>
+          </div>
+
+          <div class="project-learning">
+            <p class="mono-label">WHAT I LEARNED</p>
+            <p>AI는 답을 대신 내리는 도구가 아니라, <strong>현장의 문제를 분석하고 더 나은 의사결정을 돕는 도구</strong>로 활용할 수 있다는 것을 배웠습니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="evidence">
+        <div class="section-index">05</div>
+        <div class="section-content">
+          <p class="mono-label">GROWTH EVIDENCE</p>
+          <h2>나의 성장을 보여주는 근거</h2>
+          <div class="evidence-grid">
+            <button class="evidence-card" type="button" data-evidence="grade" aria-haspopup="dialog"><strong>4.5</strong><h3>전공 학점</h3><p>학업과 근무를 병행하며 유지</p><span class="evidence-action">증빙 보기</span></button>
+            <button class="evidence-card" type="button" data-evidence="hazard" aria-haspopup="dialog"><strong>필기 합격</strong><h3>위험물기능사</h3><p>최종 자격 취득을 위해 준비 중</p><span class="evidence-action">증빙 보기</span></button>
+            <button class="evidence-card" type="button" data-evidence="ai" aria-haspopup="dialog"><strong>2회</strong><h3>AI 관련 교육</h3><p>AI 활용 역량을 높이기 위한 학습</p><span class="evidence-action">증빙 2건 보기</span></button>
+            <button class="evidence-card" type="button" data-evidence="award" aria-haspopup="dialog"><strong>2등</strong><h3>교외 경연대회</h3><p>제조 데이터 분석 프로젝트</p><span class="evidence-action">증빙 보기</span></button>
+            <button class="evidence-card" type="button" data-evidence="passport" aria-haspopup="dialog"><strong>API</strong><h3>여권 분석기</h3><p>가상 샘플로 분석 과정 시연</p><span class="evidence-action">시연하기</span></button>
+            <article><strong>수강 중</strong><h3>반도체 교육</h3><p><time datetime="2026-09-15">26.09.15</time>~<time datetime="2026-12-15">26.12.15</time><br>공정 직무를 향한 산업 이해 확장</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing">
+        <p>아직 완성된 엔지니어는 아닙니다.</p>
+        <h2>부족함을 발견하면 공부하고,<br />직접 만들어보고,<br />결과로 확인합니다.</h2>
+        <p class="closing-copy">지금의 저는 ‘완성된 사람’이 아니라,<br />현장에서 필요한 엔지니어로 성장하고 있는 사람입니다.</p>
+      </section>
+
+      <footer>
+        <span>© 2026 이병찬 · Chemical Engineering</span>
+        <span class="mono-label">LEARN · BUILD · VERIFY</span>
+      </footer>
+    </main>
+  </div>
+
+  <div class="evidence-modal" id="evidenceModal" hidden aria-hidden="true">
+    <section class="evidence-dialog" role="dialog" aria-modal="true" aria-labelledby="evidenceTitle">
+      <header class="evidence-modal-header">
+        <div>
+          <p class="mono-label">EVIDENCE</p>
+          <h2 id="evidenceTitle"></h2>
+        </div>
+        <button class="evidence-close" id="evidenceClose" type="button" aria-label="증빙 닫기">×</button>
+      </header>
+      <div class="evidence-viewer" id="evidenceViewer"></div>
+      <div class="evidence-nav" id="evidenceNav" hidden>
+        <button id="evidencePrev" type="button">이전</button>
+        <span id="evidenceCount" aria-live="polite"></span>
+        <button id="evidenceNext" type="button">다음</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <script src="app.js?v=37"></script>
+</body>
+</html>
