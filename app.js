@@ -147,6 +147,7 @@ function initActionPipeline() {
 initActionPipeline();
 
 const distillationModule = document.getElementById("distillationTrigger");
+const distillationMotionTrigger = distillationModule?.querySelector(".distillation-column");
 
 function initDistillation() {
   if (!distillationModule) return;
@@ -161,9 +162,12 @@ function initDistillation() {
     if (!entries[0]?.isIntersecting) return;
     distillationModule.classList.add("is-active");
     observer.disconnect();
-  }, { threshold: 0.18 });
+  }, {
+    rootMargin: "0px 0px -8% 0px",
+    threshold: 0.28
+  });
 
-  observer.observe(distillationModule);
+  observer.observe(distillationMotionTrigger || distillationModule);
 }
 
 initDistillation();
