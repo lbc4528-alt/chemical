@@ -1539,6 +1539,7 @@ html.motion-ready .closing .catalyst-word {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
+.study-stats-two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .effort-metrics div,
 .study-stats div {
   min-width: 0;
