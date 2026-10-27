@@ -518,6 +518,8 @@ html.motion-ready #story .origin-values > article {
 }
 #story.motion-active .origin-values > article:nth-child(1) { animation-delay: .12s; }
 #story.motion-active .origin-values > article:nth-child(2) { animation-delay: .32s; }
+#story.motion-active .origin-values > article:nth-child(3) { animation-delay: .52s; }
+#story.motion-active .origin-values > article:nth-child(4) { animation-delay: .72s; }
 
 @keyframes crystallize-motion {
   to {
@@ -1480,6 +1482,19 @@ html.motion-ready .closing .catalyst-word {
   color: #c2ccd6;
   font-size: clamp(1.08rem, 1.8vw, 1.28rem);
   line-height: 1.95;
+}
+.origin-copy p { margin: 0; }
+.origin-copy p + p { margin-top: 22px; }
+.origin-copy strong { color: var(--text); font-weight: 700; }
+.origin-copy .story-bridge {
+  margin-top: 28px;
+  padding: 17px 18px;
+  border-left: 2px solid var(--mint);
+  background: rgba(107, 231, 198, .055);
+  color: #dce5ec;
+  font-size: .96em;
+  font-weight: 600;
+  line-height: 1.75;
 }
 .origin-values {
   display: grid;
