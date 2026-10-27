@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23090d12'/%3E%3Cpath d='M24 12h16M28 12v15L16 48a4 4 0 0 0 4 6h24a4 4 0 0 0 4-6L36 27V12' fill='none' stroke='%236be7c6' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M20 46h24' stroke='%23aa82f5' stroke-width='7'/%3E%3C/svg%3E" />
-  <link rel="stylesheet" href="styles.css?v=39" />
+  <link rel="stylesheet" href="styles.css?v=42" />
 </head>
 <body>
   <section class="intro" id="intro" aria-label="화학공학 인트로 애니메이션">
@@ -43,9 +43,9 @@
     <nav class="nav" aria-label="포트폴리오 메뉴">
       <a class="brand" href="#top">BC.01</a>
       <div class="nav-links">
-        <a href="#now">현재</a>
-        <a href="#direction">방향</a>
-        <a href="#actions">성장 행동</a>
+        <a href="#story">성장 과정</a>
+        <a href="#field">현장</a>
+        <a href="#study">학업</a>
         <a href="#project">프로젝트</a>
         <a href="#evidence">성장 근거</a>
       </div>
@@ -88,8 +88,8 @@
             </g>
           </svg>
         </div>
-        <h1><span>기초를 쌓고,</span><span>현장을 향해 성장합니다.</span></h1>
-        <p class="hero-copy">화학공학을 전공하며 학점 관리와 자격증 준비를 병행하고 있습니다. 아르바이트와 프로젝트에서는 AI를 직접 활용하며, 화학·반도체 공정의 문제를 스스로 해결할 수 있는 엔지니어를 준비하고 있습니다.</p>
+        <h1><span>실패를 다음 행동으로 바꾸며,</span><span>현장을 준비합니다.</span></h1>
+        <p class="hero-copy">현대제철 현장에서 버티는 힘을 배웠고, 화학공학과에서 공정과 안전의 기초를 쌓고 있습니다. 과거의 코딩 경험은 업무 개선과 제조 데이터 분석에 연결하며 대산 석유화학단지 생산직을 준비하고 있습니다.</p>
         <dl class="hero-profile" aria-label="기본 자기소개">
           <div><dt>이름</dt><dd>이병찬</dd></div>
           <div><dt>전공</dt><dd>화학공학과</dd></div>
@@ -97,107 +97,164 @@
           <div><dt>학년</dt><dd>1학년</dd></div>
         </dl>
         <div class="hero-facts" aria-label="주요 성장 지표">
-          <div><strong>4.5</strong><span>현재 학점</span></div>
-          <div><strong>위험물 기능사 필기<br>합격</strong><span>자격증 현황</span></div>
-          <div><strong>제조 데이터 분석 경연대회 2등</strong><span>AI 역량</span></div>
+          <div><strong>1년 이상</strong><span>현대제철 현장 경험</span></div>
+          <div><strong>4.5 · 100%</strong><span>전공 학점 · 출결</span></div>
+          <div><strong>팀장 · 2등</strong><span>AI 공정 분석 공모전</span></div>
         </div>
       </header>
 
-      <section class="section" id="now">
+      <section class="section process-section" id="story">
         <div class="section-index">01</div>
         <div class="section-content">
-          <p class="mono-label">CURRENT POSITION</p>
-          <h2>현재의 나</h2>
-          <div class="two-column-copy">
-            <div class="prose">
-              <p>현재 화학공학을 전공하며 <strong>학점 관리와 자격증 준비</strong>를 함께 이어가고 있습니다. 학점은 <strong>4.5</strong>를 유지하고 있으며, 위험물기능사 필기시험에 합격한 뒤 최종 자격 취득을 준비하고 있습니다.</p>
-              <p>학업과 함께 여행사에서 아르바이트하며 반복 업무를 더 효율적으로 처리할 방법을 고민했습니다. 그 과정에서 <strong>API를 활용한 여권 분석기</strong>를 제작해 AI가 실제 업무에 적용되는 과정을 경험했습니다.</p>
-              <p>AI 활용 역량을 높이기 위해 교외 교육과 경연대회에 참여했고, 반도체 분야 진출을 위한 기초를 쌓고자 관련 교육도 수강하고 있습니다.</p>
-              <p>또한 교내 <strong>학습공동체 프로그램</strong>에 참여해 팀원들과 대기업 인적성 시험을 준비하고 있습니다. <strong>GSAT와 SKCT</strong>를 중심으로 문제 풀이 방법과 취약 영역을 공유하며, 목표 기업에 필요한 사고력과 문제 해결 역량을 꾸준히 키우고 있습니다.</p>
+          <p class="mono-label">MY STARTING POINT</p>
+          <h2>성실함과 몰입이<br />출발점이었습니다.</h2>
+          <div class="origin-layout">
+            <p class="origin-copy">가정에서 정직과 성실을 중요하게 배우며 자랐습니다. 고등학교 때 공부를 잘하는 학생은 아니었지만, 친구들과 코딩하며 직접 만들고 문제를 해결하는 일에는 오래 몰입했습니다. 이때부터 관심 있는 목표가 생기면 생각에만 머물지 않고 직접 해보는 성향이 만들어졌습니다.</p>
+            <div class="origin-values" aria-label="성장의 출발점">
+              <article><span>VALUE</span><strong>정직과 성실</strong><p>맡은 일을 피하지 않고 끝까지 이어가는 기준</p></article>
+              <article><span>INTEREST</span><strong>코딩과 만들기</strong><p>문제를 직접 풀어낼 때 느낀 몰입의 즐거움</p></article>
             </div>
-            <dl class="summary-list">
-              <div><dt>전공</dt><dd>화학공학</dd></div>
-              <div><dt>학점</dt><dd>4.5</dd></div>
-              <div><dt>AI 경험</dt><dd>여권 분석기 제작<br>제조 데이터 분석</dd></div>
-              <div><dt>현재 학습</dt><dd>위험물 · 반도체 교육<br>GSAT · SKCT</dd></div>
-            </dl>
           </div>
         </div>
       </section>
 
-      <section class="section direction" id="direction">
+      <section class="section process-section" id="challenge">
         <div class="section-index">02</div>
         <div class="section-content">
-          <p class="mono-label">CAREER DIRECTION</p>
-          <h2>내가 향하고 있는 방향</h2>
-          <p class="direction-lead">화학공장 및 반도체 산업의 <strong>공정 엔지니어 또는 오퍼레이터</strong>로 성장하는 것이 목표입니다.</p>
-          <div class="direction-body">
-            <p>반도체 산업은 화학공학에서 배우는 공정, 소재, 안전, 품질 관리 지식을 실제 현장에 적용할 수 있다는 점에서 관심을 갖게 되었습니다.</p>
-            <p>아직 화학공학의 기초 지식과 AI 활용 능력 모두 더 성장해야 한다고 생각합니다. 많은 것을 아는 사람보다, 기초를 탄탄하게 갖추고 공정을 안전하게 이해하며 문제를 스스로 해결할 수 있는 엔지니어가 되고자 합니다.</p>
+          <p class="mono-label">CHALLENGE & RECOVERY</p>
+          <h2>실패해도 다시 준비하는<br />힘을 길렀습니다.</h2>
+          <p class="process-lead">소방과 UDT를 목표로 시작한 도전은 원하는 결과로 끝나지 않았지만, 제 생활을 바꾸고 다시 방향을 정하는 힘을 남겼습니다.</p>
+
+          <div class="effort-metrics" aria-label="도전을 위해 반복한 노력">
+            <div><strong>1년+</strong><span>준비 비용을 마련한 현장 근무</span></div>
+            <div><strong>3~10km</strong><span>매일 이어간 러닝</span></div>
+            <div><strong>1~3km</strong><span>거의 매일 반복한 수영</span></div>
           </div>
-          <blockquote>“화학공학의 기초를 탄탄하게 쌓아,<br /><span class="direction-quote-highlight">안전을 기본으로 생각하는 엔지니어</span>가 되겠습니다.”</blockquote>
+
+          <div class="process-grid" aria-label="첫 번째 성장 과정">
+            <article><span>01 목표</span><h3>소방과 특수부대 도전</h3><p>소방을 최종 목표로 정하고 특수부대 경험과 필요한 점수를 함께 준비했습니다.</p></article>
+            <article><span>02 어려움</span><h3>처음부터 다시 시작</h3><p>공부 습관이 없는 상태에서 토익과 한국사를 준비해 몇 점 차이로 떨어졌고, 수영도 시험 3개월 전 처음 배웠습니다.</p></article>
+            <article><span>03 행동</span><h3>일과 훈련을 병행</h3><p>부모님께 의지하지 않기 위해 현대제철에서 일하며 러닝, 근력운동, 수영을 생활의 루틴으로 만들었습니다.</p></article>
+            <article><span>04 전환</span><h3>실패 원인을 다시 보다</h3><p>첫 시험에서는 수영 종목을 넘지 못했고 재도전 중 무릎이 나빠졌습니다. 준비 기간과 건강, 경제 상황을 살펴 새로운 방향을 찾았습니다.</p></article>
+          </div>
+
+          <div class="growth-result">
+            <div><span>생긴 강점</span><p>꾸준함 · 자립심 · 자기관리 · 상황을 다시 판단하는 힘</p></div>
+            <blockquote>“포기하지 않는다는 것은 같은 길만 고집하는 것이 아니라, 실패의 이유를 인정하고 다시 움직일 방향을 찾는 것이라고 배웠습니다.”</blockquote>
+          </div>
         </div>
       </section>
 
-      <section class="section" id="actions">
+      <section class="section process-section" id="field">
         <div class="section-index">03</div>
         <div class="section-content">
-          <p class="mono-label">GROWTH ACTIONS</p>
-          <h2>부족함을 행동으로 바꾸는 과정</h2>
-          <p class="section-intro">부족한 부분을 생각하는 데서 끝내지 않고, 학습과 업무 경험으로 하나씩 채워가고 있습니다.</p>
-          <ol class="action-list">
-            <li><i class="action-cell-fluid" aria-hidden="true"></i><span>01</span><p><strong>AI 교육 2회 수료</strong><small>AI 활용 역량 확장</small></p></li>
-            <li><i class="action-cell-fluid" aria-hidden="true"></i><span>02</span><p><strong>위험물기능사 준비</strong><small>필기시험 합격</small></p></li>
-            <li><i class="action-cell-fluid" aria-hidden="true"></i><span>03</span><p><strong>전공 학점 4.5 유지</strong><small>기초 학업 역량 관리</small></p></li>
-            <li><i class="action-cell-fluid" aria-hidden="true"></i><span>04</span><p><strong>반도체 교육 수강</strong><small>산업과 공정 이해 확장</small></p></li>
-            <li><i class="action-cell-fluid" aria-hidden="true"></i><span>05</span><p><strong>인적성 시험 준비</strong><small>학습공동체에서 GSAT · SKCT 학습</small></p></li>
-            <li><i class="action-cell-fluid" aria-hidden="true"></i><span>06</span><p><strong>여권 분석기 제작</strong><small>API 기반 업무 효율화 경험</small></p></li>
-            <li><i class="action-cell-fluid" aria-hidden="true"></i><span>07</span><p><strong>제조 데이터 분석</strong><small>생산 과정 문제 탐구</small></p></li>
-            <li><i class="action-cell-fluid" aria-hidden="true"></i><span>08</span><p><strong>교외 경연대회 참가</strong><small>프로젝트 결과 2등 수상</small></p></li>
-          </ol>
+          <p class="mono-label">FIELD TO CAREER</p>
+          <h2>힘든 현장에서<br />새로운 목표를 찾았습니다.</h2>
+          <p class="process-lead">현대제철에서 코크스 분진 청소 등 여러 작업을 1년 이상 수행하며, 생산 현장이 체력만으로 버티는 곳이 아니라는 것을 배웠습니다.</p>
 
+          <div class="process-grid" aria-label="현장 경험을 진로로 연결한 과정">
+            <article><span>01 현장</span><h3>거친 환경을 경험</h3><p>분진과 고강도 작업 속에서도 정해진 시간과 작업 순서를 지키며 맡은 일을 수행했습니다.</p></article>
+            <article><span>02 노력</span><h3>기준을 먼저 지키기</h3><p>힘으로만 버티기보다 위험요소를 확인하고 주변 작업자들과 작업 흐름을 맞추려고 노력했습니다.</p></article>
+            <article><span>03 발견</span><h3>생산직을 다시 보다</h3><p>생산 현장에는 체력뿐 아니라 안전수칙, 책임감, 협업이 함께 필요하다는 것을 알게 됐습니다.</p></article>
+            <article><span>04 선택</span><h3>화학공학과 진학</h3><p>현장에서 전문성을 갖춘 사람이 되기 위해 신성대학교 화학공학과에 진학했습니다.</p></article>
+          </div>
+
+          <div class="growth-result">
+            <div><span>생긴 강점</span><p>현장 적응력 · 책임감 · 안전을 먼저 생각하는 태도</p></div>
+            <blockquote>“진로를 바꾸는 것은 이전 경험을 버리는 일이 아니라, 그 경험을 더 잘 활용할 방향을 다시 찾는 과정이었습니다.”</blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process-section" id="study">
+        <div class="section-index">04</div>
+        <div class="section-content">
+          <p class="mono-label">STUDY HABIT</p>
+          <h2>공부하지 않던 학생에서<br />목표를 가진 학생으로.</h2>
+          <p class="process-lead">전공을 바꾼 뒤에는 기초부터 다시 시작해야 했습니다. 목표가 분명해지자 공부는 성적을 위한 일이 아니라 현장에 나가기 위한 준비가 됐습니다.</p>
+
+          <div class="study-stats" aria-label="학업 결과">
+            <div><strong>4.5</strong><span>전공 학점</span></div>
+            <div><strong>100%</strong><span>대학 생활 출결</span></div>
+            <div><strong>필기 합격</strong><span>위험물기능사</span></div>
+          </div>
+
+          <div class="process-grid process-grid-three" aria-label="학습 습관을 만든 과정">
+            <article><span>01 어려움</span><h3>기초부터 다시 시작</h3><p>공부 습관이 제대로 잡혀 있지 않았고, 컴퓨터공학에서 화학공학으로 전공도 바뀌었습니다.</p></article>
+            <article><span>02 행동</span><h3>빠지지 않고 반복</h3><p>수업에 빠지지 않고 전공 공부와 자격증 공부를 병행했습니다. 아르바이트 일정 속에서도 학습 시간을 따로 관리했습니다.</p></article>
+            <article><span>03 확장</span><h3>부족한 부분을 직접 채우기</h3><p>AI 교육, 반도체 공정 교육, 학습공동체에 참여해 GSAT와 SKCT까지 준비 범위를 넓혔습니다.</p></article>
+          </div>
+
+          <div class="growth-result">
+            <div><span>생긴 강점</span><p>시간관리 · 학습 지속력 · 부족한 부분을 스스로 찾는 습관</p></div>
+            <blockquote>“공부를 못하는 사람이었던 것이 아니라, 왜 공부해야 하는지 알지 못했던 것이라고 느꼈습니다.”</blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section project process-section" id="project">
+        <div class="section-index">05</div>
+        <div class="section-content">
+          <p class="mono-label">TEAM LEADERSHIP PROJECT</p>
+          <h2>팀원들의 강점을 연결해<br />공모전 2등을 만들었습니다.</h2>
+          <div class="project-overview">
+            <p class="project-question">제조 데이터를 분석하는 것만큼, 서로 다른 생각을 하나의 방향으로 모으는 과정이 중요했습니다.</p>
+            <div class="project-meta"><span>AI 공정 분석 공모전</span><strong>팀장 · 2등</strong></div>
+          </div>
+
+          <div class="process-grid" aria-label="팀장으로서 프로젝트를 이끈 과정">
+            <article><span>01 어려움</span><h3>서로 다른 분석 방향</h3><p>팀원마다 잘하는 부분과 생각하는 방향이 달라 역할과 기준을 먼저 맞춰야 했습니다.</p></article>
+            <article><span>02 소통</span><h3>의견을 먼저 듣기</h3><p>팀원들의 의견을 들은 뒤 각자가 잘할 수 있는 분석, 구현, 자료 정리 역할을 나눴습니다.</p></article>
+            <article><span>03 조율</span><h3>데이터를 공통 기준으로</h3><p>의견이 다를 때는 누가 맞는지보다 데이터와 프로젝트 목표를 기준으로 방향을 정했습니다.</p></article>
+            <article><span>04 결과</span><h3>각자의 결과를 하나로</h3><p>진행 상황을 계속 공유하고 막히는 부분을 함께 조정해 최종 분석을 완성했습니다.</p></article>
+          </div>
+
+          <div class="growth-result project-result">
+            <div><span>생긴 강점</span><p>소통 · 역할 조율 · 일정 관리 · 끝까지 책임지는 리더십</p></div>
+            <blockquote>“팀장은 모든 답을 정하는 사람이 아니라, 팀원들이 같은 방향으로 움직이도록 돕는 사람이라고 배웠습니다.”</blockquote>
+          </div>
+
+          <div class="side-project" aria-label="여권 자동 분석기 프로젝트">
+            <header><p class="mono-label">INDIVIDUAL PROJECT</p><h3>반복 업무를 발견하고, 직접 줄여봤습니다.</h3></header>
+            <div class="side-project-grid">
+              <article><span>문제</span><p>여행사 아르바이트 중 여권 정보를 반복해서 확인하는 데 시간이 많이 들었습니다.</p></article>
+              <article><span>행동</span><p>바이브 코딩과 API를 활용해 가상 여권 정보를 자동 분석하는 프로그램을 만들었습니다.</p></article>
+              <article><span>배움</span><p>기술은 많이 아는 것보다 현장의 불편을 줄일 때 더 가치 있다는 것을 알게 됐습니다.</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="strengths">
+        <div class="section-index">06</div>
+        <div class="section-content">
           <div class="distillation-module" id="distillationTrigger" aria-labelledby="distillationTitle">
             <header class="distillation-heading">
-              <p class="mono-label">DISTILLATION OF SKILLS</p>
-              <h3 id="distillationTitle">역량을 증류하다</h3>
-              <p>증류탑의 분리 원리를 빌려 지금까지 쌓은 역량을 세 층으로 정리했습니다.<br />화학공학의 기초가 하단을 받치고, 프로젝트 경험과 AI 활용 역량이 위로 확장됩니다.</p>
+              <p class="mono-label">DISTILLATION OF STRENGTHS</p>
+              <h3 id="distillationTitle">경험이 강점으로 남았습니다.</h3>
+              <p>서로 다른 경험에서 얻은 배움을 증류탑의 세 층으로 정리했습니다.<br />성실함과 현장 적응력이 하단을 받치고, 소통과 문제해결 역량이 위로 확장됩니다.</p>
             </header>
 
             <div class="distillation-mobile-legend" aria-hidden="true">
-              <div class="light"><strong>Top · AI 응용</strong><span>변화에 빠르게 대응하는 AI·데이터 역량</span></div>
-              <div class="mid"><strong>Middle · 프로젝트</strong><span>기초와 기술을 연결한 실무 적용 역량</span></div>
-              <div class="heavy"><strong>Bottom · 전공 기초</strong><span>공정 이해를 지탱하는 화학공학 역량</span></div>
+              <div class="light"><strong>Top · 문제해결</strong><span>AI와 코딩을 활용해 불편을 개선하는 힘</span></div>
+              <div class="mid"><strong>Middle · 협업</strong><span>의견을 듣고 팀의 방향을 조율하는 힘</span></div>
+              <div class="heavy"><strong>Bottom · 기본</strong><span>성실함과 안전의식, 현장을 버티는 힘</span></div>
             </div>
 
             <div class="distillation-plant">
-              <div class="distillation-column" aria-label="AI 응용, 프로젝트 경험, 화학공학 기초의 세 층으로 분리된 역량 증류탑">
-                <div class="distillation-tray tray-top">
-                  <div class="distillation-tray-label label-left label-light">
-                    Top : 가벼운 기체
-                    <span>변화가 빠르고 민첩한<br />AI · IT 응용 역량</span>
-                  </div>
-                </div>
-                <div class="distillation-tray tray-middle">
-                  <div class="distillation-tray-label label-right label-mid">
-                    Middle : 혼합 액체
-                    <span>기초와 기술을 결합한<br />프로젝트 적용 역량</span>
-                  </div>
-                </div>
-                <div class="distillation-tray tray-bottom">
-                  <div class="distillation-tray-label label-left label-heavy">
-                    Bottom : 무거운 잔류물
-                    <span>흔들리지 않고 묵직한<br />화학공학 기초 역량</span>
-                  </div>
-                </div>
+              <div class="distillation-column" aria-label="문제해결, 협업, 현장 기본기의 세 층으로 분리된 역량 증류탑">
+                <div class="distillation-tray tray-top"><div class="distillation-tray-label label-left label-light">Top : 문제해결<span>AI와 코딩을 활용해<br />불편을 개선하는 힘</span></div></div>
+                <div class="distillation-tray tray-middle"><div class="distillation-tray-label label-right label-mid">Middle : 협업<span>의견을 듣고 역할과<br />방향을 조율하는 힘</span></div></div>
+                <div class="distillation-tray tray-bottom"><div class="distillation-tray-label label-left label-heavy">Bottom : 기본기<span>성실함과 안전의식,<br />현장을 버티는 힘</span></div></div>
 
-                <div class="distillation-heater"><span aria-hidden="true">●</span> 열정 (Passion to Learn)</div>
+                <div class="distillation-heater"><span aria-hidden="true">●</span> 행동 (Action to Learn)</div>
 
-                <div class="distillation-skill skill-light" style="--bubble-target:500px;--bubble-x:-58px;--bubble-x-mobile:-48px;--bubble-delay:0ms">AI 교육 2회 수료</div>
-                <div class="distillation-skill skill-light" style="--bubble-target:445px;--bubble-x:72px;--bubble-x-mobile:50px;--bubble-delay:260ms">제조 데이터 분석</div>
-                <div class="distillation-skill skill-mid" style="--bubble-target:325px;--bubble-x:0px;--bubble-x-mobile:-25px;--bubble-delay:520ms">API 여권 분석기</div>
-                <div class="distillation-skill skill-mid" style="--bubble-target:260px;--bubble-x:72px;--bubble-x-mobile:48px;--bubble-delay:780ms">반도체 공정 교육</div>
-                <div class="distillation-skill skill-heavy" style="--bubble-target:120px;--bubble-x:55px;--bubble-x-mobile:45px;--bubble-delay:1040ms">위험물기능사 필기 합격</div>
-                <div class="distillation-skill skill-heavy" style="--bubble-target:68px;--bubble-x:-55px;--bubble-x-mobile:-45px;--bubble-delay:1300ms">전공 학점 4.5</div>
+                <div class="distillation-skill skill-light" style="--bubble-target:500px;--bubble-x:-58px;--bubble-x-mobile:-48px;--bubble-delay:0ms">문제 발견</div>
+                <div class="distillation-skill skill-light" style="--bubble-target:445px;--bubble-x:72px;--bubble-x-mobile:50px;--bubble-delay:260ms">AI · 코딩 활용</div>
+                <div class="distillation-skill skill-mid" style="--bubble-target:325px;--bubble-x:0px;--bubble-x-mobile:-25px;--bubble-delay:520ms">의견 경청</div>
+                <div class="distillation-skill skill-mid" style="--bubble-target:260px;--bubble-x:72px;--bubble-x-mobile:48px;--bubble-delay:780ms">역할 · 방향 조율</div>
+                <div class="distillation-skill skill-heavy" style="--bubble-target:120px;--bubble-x:55px;--bubble-x-mobile:45px;--bubble-delay:1040ms">현장 적응 · 안전</div>
+                <div class="distillation-skill skill-heavy" style="--bubble-target:68px;--bubble-x:-55px;--bubble-x-mobile:-45px;--bubble-delay:1300ms">성실 · 꾸준함</div>
 
                 <i class="distillation-vapor vapor-one" aria-hidden="true"></i>
                 <i class="distillation-vapor vapor-two" aria-hidden="true"></i>
@@ -208,44 +265,35 @@
         </div>
       </section>
 
-      <section class="section project" id="project">
-        <div class="section-index">04</div>
+      <section class="section direction" id="direction">
+        <div class="section-index">07</div>
         <div class="section-content">
-          <p class="mono-label">AI CORE PROJECT</p>
-          <h2>제조 데이터 분석</h2>
-          <div class="project-overview">
-            <p class="project-question">제조 데이터에서 문제 발생 지점을 찾고, 조건 변화에 따른 결과를 검증할 수 있을까?</p>
-            <div class="project-meta">
-              <span>교외 경연대회</span>
-              <strong>2등 수상</strong>
-            </div>
+          <p class="mono-label">NEXT DIRECTION</p>
+          <h2>대산 석유화학단지<br />생산직을 향하고 있습니다.</h2>
+          <p class="direction-lead">현장에서 맡은 일을 성실하게 수행하고, 동료와 소통하며, 작은 문제도 그냥 지나치지 않는 생산 인재가 되는 것이 목표입니다.</p>
+          <div class="readiness-grid" aria-label="생산직을 향한 준비">
+            <article><span>전공</span><strong>화학공학</strong><p>공정과 안전의 기초 학습</p></article>
+            <article><span>안전</span><strong>위험물기능사</strong><p>필기 합격 후 최종 취득 준비</p></article>
+            <article><span>현장</span><strong>현대제철 1년+</strong><p>고강도 작업과 협업 경험</p></article>
+            <article><span>기술</span><strong>AI · 코딩</strong><p>업무 개선과 데이터 분석 경험</p></article>
+            <article><span>학습</span><strong>반도체 공정 교육</strong><p>산업과 공정 이해 확장</p></article>
+            <article><span>조직</span><strong>팀장 경험</strong><p>의견을 듣고 결과까지 조율</p></article>
           </div>
-          <p class="project-copy">생산률, 불량률, 온도, 압력, 설비 데이터를 살펴보며 문제가 발생하는 지점을 찾고 가설을 세웠습니다. 이후 AI를 활용해 데이터 변화를 분석하고, 조건을 변경했을 때 결과가 어떻게 달라지는지 직접 검증했습니다.</p>
-
-          <div class="process-flow" aria-label="프로젝트 문제 해결 과정">
-            <div><span>01</span><strong>문제 발견</strong><p>생산 데이터에서 이상 지점 탐색</p></div>
-            <div><span>02</span><strong>가설 설정</strong><p>영향 가능성이 높은 변수 선정</p></div>
-            <div><span>03</span><strong>AI 활용 분석</strong><p>변수 변화와 결과의 관계 비교</p></div>
-            <div><span>04</span><strong>결과 검증</strong><p>조건 변경 후 결과 재계산</p></div>
-          </div>
-
-          <div class="project-learning">
-            <p class="mono-label">WHAT I LEARNED</p>
-            <p>AI는 답을 대신 내리는 도구가 아니라, <strong>현장의 문제를 분석하고 더 나은 의사결정을 돕는 도구</strong>로 활용할 수 있다는 것을 배웠습니다.</p>
-          </div>
+          <blockquote>“현장을 버티는 성실함과 안전의식, 동료와 함께 결과를 만드는 소통 능력으로 안전하고 효율적인 생산에 기여하겠습니다.”</blockquote>
         </div>
       </section>
 
       <section class="section" id="evidence">
-        <div class="section-index">05</div>
+        <div class="section-index">08</div>
         <div class="section-content">
           <p class="mono-label">GROWTH EVIDENCE</p>
           <h2>나의 성장을 보여주는 근거</h2>
           <div class="evidence-grid">
-            <button class="evidence-card" type="button" data-evidence="grade" aria-haspopup="dialog"><strong>4.5</strong><h3>전공 학점</h3><p>학업과 근무를 병행하며 유지</p><span class="evidence-action">증빙 보기</span></button>
+            <button class="evidence-card" type="button" data-evidence="grade" aria-haspopup="dialog"><strong>4.5</strong><h3>전공 학점</h3><p>목표를 정한 뒤 만든 학습 습관</p><span class="evidence-action">증빙 보기</span></button>
+            <article><strong>100%</strong><h3>대학 생활 출결</h3><p>성실함을 행동으로 유지</p></article>
             <button class="evidence-card" type="button" data-evidence="hazard" aria-haspopup="dialog"><strong>필기 합격</strong><h3>위험물기능사</h3><p>최종 자격 취득을 위해 준비 중</p><span class="evidence-action">증빙 보기</span></button>
             <button class="evidence-card" type="button" data-evidence="ai" aria-haspopup="dialog"><strong>2회</strong><h3>AI 관련 교육</h3><p>AI 활용 역량을 높이기 위한 학습</p><span class="evidence-action">증빙 2건 보기</span></button>
-            <button class="evidence-card" type="button" data-evidence="award" aria-haspopup="dialog"><strong>2등</strong><h3>교외 경연대회</h3><p>제조 데이터 분석 프로젝트</p><span class="evidence-action">증빙 보기</span></button>
+            <button class="evidence-card" type="button" data-evidence="award" aria-haspopup="dialog"><strong>팀장 · 2등</strong><h3>AI 공정 분석</h3><p>팀원과 함께 만든 분석 결과</p><span class="evidence-action">증빙 보기</span></button>
             <button class="evidence-card" type="button" data-evidence="passport" aria-haspopup="dialog"><strong>API</strong><h3>여권 분석기</h3><p>가상 샘플로 분석 과정 시연</p><span class="evidence-action">시연하기</span></button>
             <article><strong>수강 중</strong><h3>반도체 교육</h3><p><time datetime="2026-09-15">26.09.15</time>~<time datetime="2026-12-15">26.12.15</time><br>공정 직무를 향한 산업 이해 확장</p></article>
           </div>
@@ -253,9 +301,9 @@
       </section>
 
       <section class="closing">
-        <p>아직 완성된 엔지니어는 아닙니다.</p>
-        <h2>부족함을 발견하면 <span class="catalyst-word catalyst-word-1">공부하고</span>,<br />직접 <span class="catalyst-word catalyst-word-2">만들어보고</span>,<br />결과로 <span class="catalyst-word catalyst-word-3">확인합니다</span>.</h2>
-        <p class="closing-copy">지금의 저는 ‘완성된 사람’이 아니라,<br />현장에서 필요한 엔지니어로 성장하고 있는 사람입니다.</p>
+        <p>FAILURE → ACTION → GROWTH</p>
+        <h2>실패의 이유를 <span class="catalyst-word catalyst-word-1">찾고</span>,<br />다음 행동을 <span class="catalyst-word catalyst-word-2">선택하고</span>,<br />과정으로 <span class="catalyst-word catalyst-word-3">증명합니다</span>.</h2>
+        <p class="closing-copy">목표의 이름은 여러 번 바뀌었지만,<br />부족함을 발견하면 행동하는 태도는 바뀌지 않았습니다.</p>
       </section>
 
       <footer>
@@ -284,6 +332,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
-  <script src="app.js?v=41"></script>
+  <script src="app.js?v=42"></script>
 </body>
 </html>
+

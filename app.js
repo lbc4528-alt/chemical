@@ -167,15 +167,26 @@ function initDistillation() {
     threshold: 0.28
   });
 
-  observer.observe(distillationMotionTrigger || distillationModule);
+  const observeDistillation = () => observer.observe(distillationMotionTrigger || distillationModule);
+
+  if (intro?.isConnected) {
+    const introRemovalObserver = new MutationObserver(() => {
+      if (intro.isConnected) return;
+      introRemovalObserver.disconnect();
+      observeDistillation();
+    });
+    introRemovalObserver.observe(document.body, { childList: true });
+  } else {
+    observeDistillation();
+  }
 }
 
 initDistillation();
 
 const narrativeMotionItems = [
   {
-    trigger: document.querySelector("#now .summary-list"),
-    target: document.getElementById("now")
+    trigger: document.querySelector("#story .origin-values"),
+    target: document.getElementById("story")
   },
   {
     trigger: document.getElementById("direction"),
@@ -454,3 +465,4 @@ evidenceNext?.addEventListener("click", () => {
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closeEvidence();
 });
+
